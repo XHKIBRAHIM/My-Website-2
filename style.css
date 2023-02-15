@@ -3,10 +3,10 @@
     padding: 0;
 }
 .body{
-    background: url(./img/images.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    height: 600px;
+    background: url(./img/download.jpg);
+    background-attachment:fixed;
+    background-size:contain;
+    height: 10%;
     width: 100%;
 }
 .logo{   
@@ -20,6 +20,7 @@
 .navbar{
     width: 85%;
     margin: auto;
+    border-radius: 20px;
     padding: 7px 0px;
     display: flex;
     align-items: center;
@@ -44,11 +45,61 @@
     content: "";
     height: 3px;
     position: absolute;
-    background:#00ff99; 
+    background:black; 
     left: 0;
     bottom: -8px;
     transition: 0.5s;
 }
 .navbar ul li:hover::after{
     width: 100%;
+}
+.content{
+    text-align: center;
+    justify-content: center;
+    margin-top: 250px;
+}
+.content h1{
+    color:#00faff;
+    font-size: 45px;
+    font-weight: bold;
+    width: 100%;
+    margin-top:80px ;
+}
+.content p{
+    color:#00faff;
+    font-size: 50px;
+    font-weight: bold;
+    width: 100%;
+    margin: 10px 0px;
+}
+button{
+    padding: 15px 0px;
+    margin: 20px 10px;
+    background:transparent;
+    font-weight: bold;
+    color: red;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 30px;
+    width:200px;
+    border: 3px solid aqua;
+}
+span{
+    background-color: cyan;
+    width: 0%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index:-1 ;
+    transition: 0.5s;
+}
+button:hover span{
+width: 100%;
+}
+button:hover{
+    border: none;
 }

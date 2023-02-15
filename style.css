@@ -3,7 +3,7 @@
     padding: 0;
 }
 .body{
-    background: url(./66-666819_website-design-background-creative-background-image-for-website.jpg);
+    background: url(./img/images.jpg);
     background-attachment: fixed;
     background-size: cover;
     height: 600px;
@@ -16,13 +16,15 @@
     /* padding-left: 0px 20px ; */
     cursor: pointer;
 }
+/* ////////////////////////////navbar///////////////////////////// */
 .navbar{
     width: 85%;
     margin: auto;
-    padding: 20px 0px;
+    padding: 7px 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #00ff99;
 }
 .navbar ul li{
     display: inline-block;
@@ -32,7 +34,7 @@
 }
 
 .navbar ul li a{
-    color: white;
+    color:black;
     text-transform: capitalize;
     font-weight: bold;
     text-decoration: none;
@@ -44,10 +46,9 @@
     position: absolute;
     background:#00ff99; 
     left: 0;
-    bottom: -10px;
+    bottom: -8px;
     transition: 0.5s;
 }
-.navbar ul li::after:hover{
+.navbar ul li:hover::after{
     width: 100%;
-        
 }
